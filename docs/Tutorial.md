@@ -56,7 +56,8 @@ https://slackfamilyteamhq.slack.com/apps/A0F82E8CA-slash-commands
 These commands can be either disabled or edited at any time.
 In default, all the slash commands are ephemeral, sent as a private message.
 It can be made displayed publicly by setting “response_type” as in_channel in the code. 
-
+## Validating the command
+When the google server recieves the data we can validate whether to service request against the matching the token present in intergration settings. The token is available in the "Basic information" section of your app's configuration.
 ## Slash Command In Action
 Now that we have deployed our Slash command and configured the Custom Integration for our Slack Team, all we need to do is to see in action.
 The format of the Slash command is:
