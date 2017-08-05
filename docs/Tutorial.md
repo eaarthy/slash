@@ -31,9 +31,13 @@ Next,choose the text command that the user will type after the slash. In this ca
 Then click on Add Slash Command Integration.
 ## Integration Settings
 Then it will open up a detailed configuration screen for the “/deal” command and you need to go down to a section that is titled Integration Settings and enter the values as shown below for
+
 Command: /deal
+
 URL: http://slack-projectidfromgoogle.com
+
 Method: GET
+![Add a new configuration](IntegrationSlash.png)
 Note that the value in URL field is your Google Cloud Platform project ID that you created earlier.
 It is nice to select an Autocomplete Help Text for your Slash command.
 ![Your slash command details](AutoComplete.png) 
