@@ -1,1 +1,2 @@
 # slash
+A slash command 
