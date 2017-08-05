@@ -31,13 +31,14 @@ Then it will open up a detailed configuration screen for the “/deal” command
 Command: /deal
 URL: http://slack-projectidfromgoogle.com
 Method: GET
-![Your slash command details](SlashCommandConfig.png)  
 Note that the value in URL field is your Google Cloud Platform project ID that you created earlier.
 It is nice to select an Autocomplete Help Text for your Slash command.
 
 For now, you can leave everything else empty. Just scroll down to the bottom and click the "Save Integration" button.
 Now you can see all the slash command configured for your team on 
 https://slackfamilyteamhq.slack.com/apps/A0F82E8CA-slash-commands
+![Your slash command details](SlashCommandConfig.png)  
+
 These commands can be either disabled or edited at any time.
 In default, all the slash commands are ephemeral, sent as a private message.
 It can be made displayed publicly by setting “response_type” as in_channel in the code. 
@@ -45,7 +46,6 @@ It can be made displayed publicly by setting “response_type” as in_channe
 Slash command In Action;
 Now that we have deployed our Slash command and configured the Custom Integration for our Slack Team, all we need to do is to see in action.
 The format of the Slash command is:
-![Your slash command details](DealAutoComplete.png) 
 
 ![Your slash command details](DealSlashCommand.png) 
 
