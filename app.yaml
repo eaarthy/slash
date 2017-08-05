@@ -1,0 +1,10 @@
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /cards
+  static_dir: card_img_files
+
+- url: /.*
+  script: main.app
