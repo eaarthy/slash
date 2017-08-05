@@ -12,16 +12,17 @@ Setup Google App Engine in cloud, Python 2.7, Download images for deck of cards.
 A slash command takes whatever text you enter after "/ " and will be sent to the configured external URL via HTTP Methods. Then it receives whatever that URL returns and posts it as a message in Slack. By default this message visible only to the person who issued the command but here it is modified so it is available to all in the channel.
 
 # What is in the code
-The code is going to take the input from the slash command “/deal” sends it to external backend server which is configured and running in Google cloud app engine. The python code is triggered and it will pick up the random playing card number and send the image of the card as response. The result is send in json format.
+The code is going to take the input from the slash command “/deal” sends it to external backend server which is configured and running in Google cloud app engine. The python code is triggered and it will pick up the random playing card number and send the image of the card as response. The result is send in json.
 
 # Setup and Integration of Slash command:
-Create Team:
+##Create Team:
 If you don’t have your own test team account,create one to get started or join existing team.
 For example, you can join my team I have created
-Team:SlackFamilyHere
+
+Team: SlackFamilyHere
 https://slackfamilyteamhq.slack.com
 
-Set up your slash command:
+###Set up your slash command:
 Sign in to your Slack account and go to https://slack.com/apps/A0F82E8CA-slash-commands to add a new slash command.
 Click the “Add Configuration” button to start the process.
 ![Add a new configuration](AddSlashIntegration.png)
@@ -33,6 +34,7 @@ URL: http://slack-projectidfromgoogle.com
 Method: GET
 Note that the value in URL field is your Google Cloud Platform project ID that you created earlier.
 It is nice to select an Autocomplete Help Text for your Slash command.
+![Your slash command details](AutoComplete.png) 
 
 For now, you can leave everything else empty. Just scroll down to the bottom and click the "Save Integration" button.
 Now you can see all the slash command configured for your team on 
