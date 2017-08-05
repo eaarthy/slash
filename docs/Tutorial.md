@@ -45,9 +45,14 @@ It can be made displayed publicly by setting “response_type” as in_channe
 Slash command In Action;
 Now that we have deployed our Slash command and configured the Custom Integration for our Slack Team, all we need to do is to see in action.
 The format of the Slash command is:
+![Your slash command details](DealAutoComplete.png) 
+
+![Your slash command details](DealSlashCommand.png) 
+
+
 
 This invokes our Slash Command handler that is hosted in Google App Engine and it comes back with a response.
-![Your slash command details](ImageOfCard.pngg) 
+![Your slash command details](ImageOfCard.png) 
 
 
 Ref: 
