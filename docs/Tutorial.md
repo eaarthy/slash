@@ -6,13 +6,17 @@ Create a slash command to draw a random playing card and display an image of it.
 These instructions will get you a copy of the project up and running on your google app engine on cloud for development and testing purposes. 
 
 # Prerequisites
-Setup Google App Engine in cloud, Python 2.7, Download images for deck of cards.
+Setup Google App Engine in cloud using the tutorial from https://console.cloud.google.com/launcher/details/google-cloud-platform/app-engine, Python 2.7, Download images for deck of cards.
 
 # What is Slash Slack Commands
 A slash command takes whatever text you enter after "/ " and will be sent to the configured external URL via HTTP Methods. Then it receives whatever that URL returns and posts it as a message in Slack. By default this message visible only to the person who issued the command but here it is modified so it is available to all in the channel.
 
 # What is in the code
 The code is going to take the input from the slash command “/deal” sends it to external backend server which is configured and running in Google cloud app engine. The python code is triggered and it will pick up the random playing card number and send the image of the card as response. The result is send in json.
+Python Code that runs in backend can be found https://github.com/eaarthy/slash 
+Basically, main.py file code is pick up random number of playing card and display the image.
+app.yaml file is the config file. card_img_file directory as the image of the playing cards.
+doc directory as tutorial of how slash command was integrated to google app engine.
 
 # Setup and Integration of Slash command:
 ## Create Team:
@@ -74,3 +78,5 @@ https://api.slack.com/docs/messages
 http://www.girliemac.com/blog/2016/10/24/slack-command-bot-nodejs/
 
 https://rominirani.com/slack-slash-command-tutorial-8f78a5a2ea4a
+
+https://console.cloud.google.com/launcher/details/google-cloud-platform/app-engine
